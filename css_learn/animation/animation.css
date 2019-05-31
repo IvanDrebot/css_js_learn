@@ -1,0 +1,33 @@
+/*:root{*/
+/*    --test: 300px;*/
+/*}*/
+
+/*.main{*/
+/*    background: crimson;*/
+/*    height: 200px;*/
+/*    width: 200px;*/
+/*    transition: 1s;*/
+/*}*/
+
+.target{
+    background: green;
+    width: 100px;
+    height: 100px;
+    animation-name: main;
+    animation-duration: 2s;
+}
+
+/*.main:hover + .target{*/
+    /*transform: rotate(360deg);*/
+    /*transform: scale(2);*/
+/*}*/
+
+@keyframes main {
+    10%{
+        background: green;
+    }
+
+    100%{
+        background: royalblue;
+    }
+}

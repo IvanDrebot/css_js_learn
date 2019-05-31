@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*flex-wrap: wrap*/
+
+@media (min-width: 500px) {
+    .container-1, .container-2{
+        display: flex;
+        margin: 10px;
+        color: white;
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 20px;
+        /*align-items: flex-start;    /!*Clear empty space*!/*/
+        /*flex-direction: column;*/
+    }
+
+    .container-1 div, .container-2 div{
+        background: orangered;
+        border: 3px solid white;
+        border-radius: 10px;
+        padding: 0 10px;
+    }
+}
+
+.container-2{
+    /*justify-content: space-between;*/
+    justify-content: space-around;
+}
+
+.container-2 div{
+    flex-basis: 15%;
+}
+
+.block1{
+    flex: 1;
+    order: 1;
+}
+.block2{
+    flex: 1;
+    order: 3;
+}
+.block3{
+    flex: 3;
+    order: 2;
+}

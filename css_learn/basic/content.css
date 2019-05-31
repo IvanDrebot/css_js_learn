@@ -1,0 +1,42 @@
+.content{
+    display: flex;
+    margin: 10px;
+}
+h2{
+    text-align: center;
+}
+button{
+    color: white;
+    background: royalblue;
+    font-size: medium;
+    border-radius: 10px;
+}
+
+article{
+    justify-content: space-between;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 15px;
+    text-align: center;
+    background: orangered;
+    color: white;
+}
+
+.article-1{
+    flex: 1;
+    order: 1;
+}
+
+.article-2{
+    flex: 1;
+    order: 3;
+}
+
+.article-3{
+    flex: 2;
+    order: 2;
+}
+
+.article-3 h1{
+    color: darkblue;
+}

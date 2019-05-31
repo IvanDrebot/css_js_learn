@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: crimson;
+    display: flex;
+}
+
+.menu-main {
+    flex: 1;
+    padding: 15px 0 0 10px;
+}
+
+.menu-items {
+    flex: 5;
+    margin-left: 40%;
+}
+
+.menu-main a {
+    color: white;
+    text-decoration: none;
+}
+
+header ul li {
+    display: inline-block;
+    padding-left: 15px;
+}
+
+header ul li a {
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+
+/*.active{*/
+/*    color: white;*/
+/*}*/
+
+/*.active:first-letter{*/
+/*    color: green;*/
+/*}*/
+
+/*a:not(.active){*/
+/*    color: silver;*/
+/*}*/
