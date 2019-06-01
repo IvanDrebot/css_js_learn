@@ -1,0 +1,45 @@
+header {
+    background-image: url("https://webbox.imgix.net/images/kifsqlsyyrpwrthq/94cdb046-1d0a-4f29-90c8-e90ac5e70bc6.jpg?auto=format,compress&fit=crop&crop=entropy&w=1600&h=600");
+    height: 400px;
+    background-repeat: repeat-x;
+}
+.navbar .navbar-brand,
+.navbar .nav-item .nav-link {
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    transition: 1s;
+}
+.navbar .navbar-brand:hover {
+    color: yellow;
+    font-size: 23px;
+}
+.navbar .nav-item .nav-link:hover {
+    color: yellow;
+    font-size: 18px;
+}
+form {
+    margin: 20px 0 20px 100px;
+}
+select {
+    height: 40px;
+    border-radius: 10px;
+}
+.input-groups {
+    background: deepskyblue;
+    opacity: 0.8;
+    filter: alpha(opacity=50);
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+.input-groups input, select{
+    background: deepskyblue;
+    color: white;
+}
+.input-groups input::placeholder {
+    color: white;
+}
+.title{
+    color: white;
+    text-align: center;
+    margin: 40px 0 40px 0;
+}
