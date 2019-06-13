@@ -1,17 +1,14 @@
-// 1. Every new word must be in UpperCase---fix this
-
-let string = 'i am in the easy code';
-
-function toUpperCase(str) {
-    let arr = str.split(' ');
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i][0]) {
-         arr[i][0].toUpperCase()
-        }
-    }
-    return arr
-}
-console.log(toUpperCase(string));
+// 1. Every new word must be in UpperCase
+// let string = 'i am in the easy code';
+//
+// function toUpperCase(str) {
+//     let arr = str.toLowerCase().split(' ');
+//     for (let i = 0; i < arr.length; i++) {
+//         arr[i] = arr[i][0].toUpperCase() + arr[i].substr(1);
+//     }
+//     return arr.join(' ')
+// }
+// document.write(toUpperCase(string));
 
 
 // 2.  Reverse the provided string.
@@ -154,12 +151,12 @@ console.log(toUpperCase(string));
 
 // 11. Repeat a given string str (first argument) for num times
 // function repeatStringNumTimes(str, num) {
-    // let res = '';
-    // for (let i = 0; i < num; i++) {
-    //     res += str;
-    // }
-    // return res
-    // return  str.repeat(num);
+// let res = '';
+// for (let i = 0; i < num; i++) {
+//     res += str;
+// }
+// return res
+// return  str.repeat(num);
 // }
 // console.log(repeatStringNumTimes("abc", 1));
 
@@ -195,3 +192,65 @@ console.log(toUpperCase(string));
 // console.log(booWho([].slice));
 
 
+// 15. Use the array methods slice and splice
+// to copy each element of the first array
+// into the second array, in order.
+// Begin inserting elements at index n
+// of the second array.
+// function arraySplice(arr1, arr2, n) {
+//     for (let i = arr1.length - 1; i >= 0; i--) {
+//         if (n) {
+//             arr2.splice(n, 0, arr1[i]);
+//         } else {
+//             arr2.splice(0, 0 , arr1[i])
+//         }
+//     }
+//     return arr2
+// }
+//
+// console.log(arraySplice([1, 2, 3], [4, 5]));
+
+
+// 16. Remove all falsy values from an array.
+//     Falsy values in JavaScript are
+//     false, null, 0, "", undefined, and NaN.
+// function bouncer(arr) {
+//     arr = arr.filter(b => {return b});
+//     return arr
+// }
+//console.log(bouncer([1, null, NaN, 2, undefined]));
+
+
+// 17. Return the lowest index at which a value
+//     (second argument) should be inserted into
+//     an array (first argument) once it has been
+//     sorted. The returned value should be a number.
+// function getIndexToIns(arr, num) {
+//     arr.push(num);
+//     let filtered = arr.sort((a, b) => {return a - b});
+//     return filtered.indexOf(num)
+// }
+// console.log(getIndexToIns([2, 20, 10], 19));
+
+
+// 18. Return true if the string in the first element
+//     of the array contains all of the letters of the
+//     string in the second element of the array.
+function mutation(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr[i].length; j++) {
+            if (arr[i][j].has(arr[i][j])) {
+
+            }
+        }
+    }
+}
+// console.log(mutation(["hello", "hey"]));
+
+
+// 19. Reverse string (recursion function)
+// function reverseString(str) {
+//     if (str === '') return '';
+//     return reverseString(str.substr(1)) + str[0];
+// }
+// console.log(reverseString('Incora'));
